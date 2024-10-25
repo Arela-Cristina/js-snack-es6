@@ -21,3 +21,10 @@ const bike = [
         weight: 12.1
     }
 ];
+
+//cicliamo ogni elemento del array
+
+for (let i = 0; i < bike.length; i++){
+    const elements = bike[i];
+    console.log(elements)
+}
