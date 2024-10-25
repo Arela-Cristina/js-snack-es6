@@ -31,11 +31,10 @@ const nationalTeams = [
 ];
 
 
-
-
-
-
-
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
+for (let i = 0; i < nationalTeams.length; i++) {
+    const team = nationalTeams[i];
+    console.log(nationalTeams[i]);
+}
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
