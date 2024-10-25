@@ -30,7 +30,8 @@ const nationalTeams = [
     }
 ];
 
-
+//nuovo array
+const pointsMissedArray = []
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 for (let i = 0; i < nationalTeams.length; i++) {
     const team = nationalTeams[i]; // team rappresenta il mio array nationalTeams
@@ -43,7 +44,10 @@ for (let i = 0; i < nationalTeams.length; i++) {
     team.pointsMissed = Math.floor(Math.random() * 5) + 1;
     console.log(`${team.name} points Missed: ${team.pointsMissed}`);
 
+    // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+    pointsMissedArray.push({ name: team.name, pointsMissed: team.pointsMissed })
 }
-// Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
 
 console.log(nationalTeams)
+console.log(pointsMissedArray)
