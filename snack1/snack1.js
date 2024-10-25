@@ -3,28 +3,37 @@
 // Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 // Stampare a schermo la bici con peso minore.
 
-const bike = [
+const bikeArray = [
     {
-        name: "mountainBike",
+        name: "Mountain Bike",
         weight: 14.5
     },
     {
-        name: "roadBike",
+        name: "Road Bike",
         weight: 8.3
     },
     {
-        name: "bMXbike",
+        name: "BMX bike",
         weight: 10.2
     },
     {
-        name: "foldingBike",
+        name: "Folding Bike",
         weight: 12.1
     }
 ];
 
-//cicliamo ogni elemento del array
+//creiamo un elemento per stampare i risultati 
+const mainContainer = document.getElementById('mainContainer')
+//cicliamo ogni oggetto del array
+for (let i = 0; i < bikeArray.length; i++) {
+    //salvo in 'elements' ogni oggetto del mio array
+    const elements = bikeArray[i];
+    // console.log(elements)
 
-for (let i = 0; i < bike.length; i++){
-    const elements = bike[i];
-    console.log(elements)
+    //stampo ogni oggetto del array dot.notation
+    mainContainer.innerHTML += 
+    `<div>Nombre: ${elements.name}</div> 
+    <div>Peso: ${elements.weight} kg</div>
+    <br><br>`;
+
 }
