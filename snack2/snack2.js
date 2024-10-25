@@ -33,10 +33,16 @@ const nationalTeams = [
 
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 for (let i = 0; i < nationalTeams.length; i++) {
-    const team = nationalTeams[i];
-    // console.log(nationalTeams[i]);
+    const team = nationalTeams[i]; // team rappresenta il mio array nationalTeams
+
+    //ho preso ogni oggetto = pointsScored del array con dot notation
     team.pointsScored = Math.floor(Math.random() * 5) + 1;
-    console.log(team.pointsScored)
+    console.log(`${team.name} points Scored: ${team.pointsScored}`);
+
+    //ho preso ogni oggetto = pointsMissed del array con dot notation
+    team.pointsMissed = Math.floor(Math.random() * 5) + 1;
+    console.log(`${team.name} points Missed: ${team.pointsMissed}`);
+
 
 }
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
