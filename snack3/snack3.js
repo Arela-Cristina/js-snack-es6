@@ -22,6 +22,21 @@ function myFunction(array, a, b) {
 
 //controlli
 
+//se il valore passato e uno array
+//if(array.isArray(elements)){
+//console.error('elements must be array')
+//return
+//}
+
+//se a oppure b non sono numeri
+//if(isNaN(a) || isNaN(b)){
+//console.error('a is not a number')
+//return
+//} else if {
+//console.error('b is not a number')
+//return
+//}
+
 //a maggiore da b  oppure  a = Math.max(start, o)
 // if(a < 0) {
 //start = 0
