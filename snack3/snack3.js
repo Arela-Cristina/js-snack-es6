@@ -8,7 +8,7 @@ function myFunction(array, a, b) {
     const newArray = [];
     array.length = b
     //cicliamo ogni elemento
-    for (let i = a + 1; i < b; i++) {
+    for (let i = a; i < b; i++) {
         console.log(array[i])
         const element =  array[i]
 
